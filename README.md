@@ -1,4 +1,4 @@
-# ReviewProjct
+# ReviewProject
 
 The project requests the current weather once an hour using coordinates from the coordinates table via external services:
     https://www.meteomatics.com/en/api/getting-started/
