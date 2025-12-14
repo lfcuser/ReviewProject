@@ -5,18 +5,15 @@ namespace App\Http\Controllers\Swagger\Schemas;
 /**
 
  * @OA\Tag(
- *   name="Auth",
- *   description="Авторизация"
+ *   name="Auth"
  * )
  *
  * @OA\Tag(
- *   name="Coordinate",
- *   description="Апи географических мест"
+ *   name="Coordinate"
  * )
  *
  * @OA\Tag(
- *   name="CoordinateTemperature",
- *   description="Апи температуры в географических местах"
+ *   name="CoordinateTemperature"
  * )
  */
 class Tags

@@ -12,7 +12,6 @@ class CoordinateTemperatureController extends Controller
     /**
      * @OA\Get(
      *   path="/api/coordinates_temperature",
-     *   summary="Получить список погодных данных (температуры) по географическим точкам, дате и времени",
      *   operationId="GetListCoordinateTemperature",
      *   tags={"CoordinateTemperature"},
      *   security={{"bearerAuth":{}}},

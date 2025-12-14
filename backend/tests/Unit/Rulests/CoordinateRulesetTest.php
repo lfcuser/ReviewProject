@@ -63,7 +63,7 @@ class CoordinateRulesetTest extends TestCase
     {
         $this->assertFalse($this->validate([
             'id' => 1,
-            'place_name' => 'Тест',
+            'place_name' => 'Test',
             'lat' => 45.123456,
             'lon' => -73.654321,
         ]));

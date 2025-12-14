@@ -127,7 +127,7 @@ class BodyCoordinateRulesetTest extends TestCase
     {
         $this->assertFalse($this->validate([
             'place_name' => 'TestPlace',
-            'lat' => 45.1234567, // 7 знаков
+            'lat' => 45.1234567,
             'lon' => -73.654321,
         ]));
     }
@@ -137,7 +137,7 @@ class BodyCoordinateRulesetTest extends TestCase
         $this->assertFalse($this->validate([
             'place_name' => 'TestPlace',
             'lat' => 45.123456,
-            'lon' => -73.6543217, // 7 знаков
+            'lon' => -73.6543217,
         ]));
     }
 }

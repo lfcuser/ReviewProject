@@ -2,17 +2,17 @@
 
 return [
     'auth' => [
-        'bad_credentials' => 'Некорректные учетные данные',
-        'bad_route_id' => 'Некорректный идентификатор маршрута',
+        'bad_credentials' => 'Wrong login or password',
+        'bad_route_id' => 'Wrong route',
     ],
     'user' => [
-        'email_already_registered' => 'Пользователь с email ":email" уже зарегистрирован в системе',
-        'login_already_registered' => 'Пользователь с логином ":login" уже зарегистрирован в системе',
-        'id_already_exists' => 'Запись пользователя с id::id уже существует в системе',
+        'email_already_registered' => 'User with email ":email" already exist',
+        'login_already_registered' => 'User with login ":login" already exist',
+        'id_already_exists' => 'User with id::id already exist',
     ],
     'common_validation' => [
-        'required' => 'Поле обязательно',
-        'type' => 'Неправильный тип для поля :field',
-        'enum' => 'Значение должно быть одним из: :enum',
+        'required' => 'Field is required',
+        'type' => 'Wrong type for :field',
+        'enum' => 'Value must be one of: :enum',
     ],
 ];

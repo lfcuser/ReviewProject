@@ -17,15 +17,14 @@ class AuthController extends Controller
     /**
      * @OA\Post(
      *   path="/api/auth/login",
-     *   summary="Аутентификация пользователя",
      *   operationId="Login",
      *   tags={"Auth"},
      *   @OA\RequestBody(
      *     required=true,
      *     @OA\JsonContent(
      *       required={"username","password"},
-     *       @OA\Property(property="username", type="string", description="Логин или e-mail", example="username"),
-     *       @OA\Property(property="password", type="string", description="Пароль", example="password")
+     *       @OA\Property(property="username", type="string"),
+     *       @OA\Property(property="password", type="string")
      *     )
      *   ),
      *   @OA\Response(
@@ -84,7 +83,6 @@ class AuthController extends Controller
     /**
      * @OA\Get(
      *   path="/api/auth/logout",
-     *   summary="Выход из системы",
      *   operationId="Logout",
      *   tags={"Auth"},
      *   security={{"bearerAuth":{}}},
@@ -111,7 +109,6 @@ class AuthController extends Controller
     /**
      * @OA\Post(
      *   path="/api/auth/refresh",
-     *   summary="Обновление токена",
      *   operationId="Refresh",
      *   tags={"Auth"},
      *   security={{"bearerAuth":{}}},
