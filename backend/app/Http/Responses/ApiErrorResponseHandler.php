@@ -17,11 +17,11 @@ class ApiErrorResponseHandler
         }
 
         if ($e instanceof NotFoundHttpException) {
-            return response()->error('Ресурс не найден', SymfonyResponse::HTTP_NOT_FOUND);
+            return response()->error('NOT FOUND', SymfonyResponse::HTTP_NOT_FOUND);
         }
 
         if ($e instanceof AuthenticationException) {
-            return response()->error('Не авторизован', SymfonyResponse::HTTP_UNAUTHORIZED);
+            return response()->error('UNAUTHORIZED', SymfonyResponse::HTTP_UNAUTHORIZED);
         }
 
         if ($e instanceof AbstractAppException) {

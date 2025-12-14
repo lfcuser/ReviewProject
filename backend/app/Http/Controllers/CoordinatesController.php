@@ -16,7 +16,6 @@ class CoordinatesController extends Controller
     /**
      * @OA\Get(
      *   path="/api/coordinates",
-     *   summary="Получить список отслеживаемых географических точек",
      *   operationId="GetListCoordinate",
      *   tags={"Coordinate"},
      *   security={{"bearerAuth":{}}},
@@ -56,7 +55,6 @@ class CoordinatesController extends Controller
     /**
      * @OA\Post(
      *   path="/api/coordinates",
-     *   summary="Добавить в список отслеживаемых географических точек",
      *   operationId="StoreCoordinate",
      *   tags={"Coordinate"},
      *   security={{"bearerAuth":{}}},
@@ -96,7 +94,6 @@ class CoordinatesController extends Controller
     /**
      * @OA\Get(
      *   path="/api/coordinates/{id}",
-     *   summary="Получить отслеживаемую географическую точеку",
      *   operationId="GetItemCoordinate",
      *   tags={"Coordinate"},
      *   security={{"bearerAuth":{}}},
@@ -128,7 +125,6 @@ class CoordinatesController extends Controller
     /**
      * @OA\Put(
      *   path="/api/coordinates/{id}",
-     *   summary="Обновить отслеживаемую географическую точеку",
      *   operationId="UpdateCoordinate",
      *   tags={"Coordinate"},
      *   security={{"bearerAuth":{}}},
@@ -170,7 +166,6 @@ class CoordinatesController extends Controller
     /**
      * @OA\Delete(
      *   path="/api/coordinates/{id}",
-     *   summary="Удалить отслеживаемую географическую точеку",
      *   operationId="DeleteItemCoordinate",
      *   tags={"Coordinate"},
      *   security={{"bearerAuth":{}}},
